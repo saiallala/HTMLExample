@@ -7,35 +7,7 @@ inside the head and it is a container for metadata. Metadata isn't displayed-->
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
     <title>Title should be located inside the head tags</title>
-    <style>
-        LeftIntro {
-            -webkit-flex: 1;
-            -ms-flex: 1;
-            flex: 1;
-            background: grey;
-            padding: 20px;
-        }
-
-        RightIntro {
-            -webkit-flex: 1;
-            -ms-flex: 1;
-            flex: 1;
-            background: white;
-            padding: 20px;
-        }
-
-        section {
-            display: -webkit-flex;
-            display: flex;
-        }
-
-        @media (max-width: 600px) {
-            section {
-                -webkit-flex-direction: column;
-                flex-direction: column;
-            }
-        }
-    </style>
+    <link href="StyleSheet.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -134,35 +106,36 @@ inside the head and it is a container for metadata. Metadata isn't displayed-->
             </p>
             <pre>Defines preformatted text</pre>
 
-                <h2> HTML Character Entities </h2>
-                <table>
-                    <tbody>
-                        <tr>
-                            <td>less than </td>
-                            <td> &lt; </td>
-                            <td> &#60;</td>
-                        </tr>
-                        <tr>
-                            <td>greater than </td>
-                            <td>&gt; </td>
-                            <td>&#62;</td>
-                        </tr>
-                        <tr>
-                            <td>ampersand</td>
-                            <td>&amp;</td>
-                            <td>&#38;</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <h2>Character Set</h2>
-                <p>
-                    The difference between charsets is located here. It is inserted inside the head tag to
-                    specify the type of character set used.
-                </p>
-                <a href="https://www.w3schools.com/html/html_charset.asp"> Link for all the charsets </a>
+            <h2> HTML Character Entities </h2>
+            <table>
+                <tbody>
+                    <tr>
+                        <td>less than </td>
+                        <td> &lt; </td>
+                        <td> &#60;</td>
+                    </tr>
+                    <tr>
+                        <td>greater than </td>
+                        <td>&gt; </td>
+                        <td>&#62;</td>
+                    </tr>
+                    <tr>
+                        <td>ampersand</td>
+                        <td>&amp;</td>
+                        <td>&#38;</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>Character Set</h2>
+            <p>
+                The difference between charsets is located here. It is inserted inside the head tag to
+                specify the type of character set used.
+            </p>
+            <a href="https://www.w3schools.com/html/html_charset.asp"> Link for all the charsets </a>
         </RightIntro>
     </section>
     <h2> iFrame Of A Random Website (Not all websites allow/ grant permission to iframe)</h2>
-    <iframe src="http://lepimivarim.ru/en/menu/" height="400px" width="100%" style="border:5px solid black;"></iframe>
+    <iframe src="file:///Users/Professional/GitHub/HTMLExample/htmlVhtml5.html" height="400px" width="100%" style="border:5px solid black;"></iframe>
 </body>
+
 </html>
