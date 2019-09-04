@@ -4,9 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>donelysExample</title>
-    <link rel="stylesheet" href="donelysExample.css">
+    <link rel="stylesheet" href="CSS/donelysExample.css">
   </head>
   <body>
+    <script src="JS/donelysExample.js" type="text/javascript"></script>
     <h1 style="color:#4381e6">Welcome to Donelys-HTML example</h1>
     <h2> In this page we are going to be using some HTML elements as example</h2>
     <div class="listOfTopics">
@@ -38,9 +39,19 @@
             <img src="imgs/bhdecenes2.png" style="width:31.5%;opacity:0.9">
             <img src="imgs/bhdecenes3.png" style="width:33%; opacity:0.9">
 
+
           </ul>
+          <button type="button" onclick="getDate()">
+            Click me to display Date and Time.</button>
+
+          <p id="dateArea"></p>
 
         </div>
+
+          <div id="bigForm">
+
+            <!-- This is a division for forms name  and lastname font --->
+
           <div id = "formsID" >
 
             <form class="inFormInputNames" action="index.html" method="post">
@@ -64,19 +75,50 @@
             </form>
 
           </div>
-          <div class="seconForm">
+          <div id="seconForm"> <!-- This is a division for pick color font --->
             <br>
             Pick a color:
+            <br>
             <select class="" name="class" size="5">
-              <option value="">White</option>
-              <option value="">Black</option>
+
+              <option value=""> white  </option>
+              <option value="" >Black</option>
               <option value="">Blue</option>
               <option value="">Red</option>
               <option value="">Yellow</option>
+              <option value="">Green</option>
+              <option value="">Purple</option>
+              <option value="">Gray</option>
 
             </select>
 
+
+
+
           </div>
+          <div id="thirdForm">
+            <!-- here is the creation of form using  text area  -->
+            <form class="" action="index.html" method="post">
+              NAME: <input type='text' name='name' id='name' /><br />
+
+              Email: <input type='text' name='email' id='email' /><br />
+
+              Website: <input type='text' name='website' id='website' /><br />
+
+              Comment:<br />
+             <textarea name='comment' id='comment'></textarea><br />
+
+            <input type='hidden' name='articleid' id='articleid' value='' />
+
+            <input type='submit' value='Submit' />
+          </form>
+
+          <p id="retrived-data"></p>
+
+
+
+          </div>
+</div>
 
 
   </body>
