@@ -8,12 +8,15 @@
 </head>
 
 <body>
-    <center>
-        <h1> [Name-IT]</h1>
-    </center>
+    <p align = "right"><a href="https://www.google.com" target="">Login</a></p>
+    <header>
+        <center>
+            <h1> CO-OP</h1>
+        </center>
+    </header>
     <nav>
-        <a class="active" href="home.html">Home</a>
-        <a href="post.html">Post a Project</a>
+        <a href="home.html">Home</a>
+        <a class="active" href="post.html">Post a Project</a>
         <a href="current.html">Current Projects</a>
         <a href="friends.html">Friends</a>
     </nav>
@@ -22,22 +25,34 @@
 
     <form action="/action_page.php">
 
-        <label for="firstname">First Name</label>
-        <input type="text" name="firstname" id = "firstname"value="John">
+        <label for="firstname">First Name</label><br>
+        <input type="text" name="firstname" id="firstname" value="John">
         <br> <br />
 
-        <label for="lastname">Last Name</label>
-        <input type="text" name="lastname" id = "lastname"value="Doe">
+        <label for="lastname">Last Name</label><br>
+        <input type="text" name="lastname" id="lastname" value="Doe">
         <br> <br />
 
-        <label for="projectname">Project Name</label>
-        <input type="text" name="projectname" id = "projectname"value="Name_Project">
+        <label for="projectname">Project Name</label><br>
+        <input type="text" name="projectname" id="projectname" value="Name_Project">
         <br>
-
+        <label for="langs">Technology Filter</label><br>
+        <div class="grid-container">
+            <div>
+                <input type="checkbox" name="java" value="Bike"> Java<br>
+                <input type="checkbox" name="c++" value="Car"> C++<br>
+                <input type="checkbox" name="python" value="Boat"> Python<br>
+            </div>
+            <div>
+                <input type="checkbox" name="java" value="Bike"> C#<br>
+                <input type="checkbox" name="c++" value="Car"> Angular<br>
+                <input type="checkbox" name="python" value="Boat"> React<br>
+            </div>
+        </div>
         <h4>Project Description</h4>
-<textarea name="projectdesc" rows="20" cols="40">Project Description</textarea>
-<br> <br />
-        <input class= "btn btn-success btn-lg" type = "submit" name = "submit">
+        <textarea name="projectdesc" rows="20" cols="40">Project Description</textarea>
+        <br> <br />
+        <input class="btn btn-success btn-lg" type="submit" name="submit">
     </form>
 </body>
 
